@@ -1,5 +1,6 @@
 /*==========  Non-Mobile First Method  ==========*/
 
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
 	/* HEADER
@@ -110,6 +111,10 @@
 
 	.section-blog .col-md-4:nth-last-child(-n+2) .blog-item {
 	    margin-bottom: 0;
+	}
+
+	.e-mail {
+		margin-left: 16%;
 	}
 
 }
@@ -370,6 +375,13 @@
 	.site-footer .col-xs-12 {
 		text-align: center;
 	}
+
+	.e-mail {
+		display: block;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+
 }
 
 /* Extra Small Devices, Phones */ 
@@ -438,4 +450,11 @@
 	.site-footer .col-xs-offset-3 {
 		margin-left: 0;
 	}
+
+	.text-right {
+		margin-top: 20px;
+	}
+	
+	
+
 }
