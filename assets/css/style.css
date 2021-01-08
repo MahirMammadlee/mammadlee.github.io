@@ -373,7 +373,7 @@ html, body {
 .blog-item:before {
     content: '';
     border-radius: 20px;
-    height: 100%;
+    height: 105%;
     width: 100%;
     position: absolute;
     top: 0;
