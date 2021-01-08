@@ -21,10 +21,6 @@
 
 	/* SITEMAIN
 	================================================== */
-	/* Modal */
-	.modal-header {
-		height: 400px;
-	}
 }
 
 /* Medium Devices, Desktops */
@@ -75,7 +71,6 @@
 	}
 
 	.section-skills,
-	.section-blog,
 	.section-form {
 	    padding-bottom: 90px;
 	}
@@ -117,19 +112,6 @@
 	    margin-bottom: 0;
 	}
 
-	/* Section: Counters */
-	.section-counters {
-		padding: 70px 0;
-	}
-
-	.site-section p.counter {
-		font-size: 80px;
-	}
-
-	/* Modal */
-	.modal-header {
-		height: 350px;
-	}
 }
 
 /* Small Devices, Tablets */
@@ -298,7 +280,7 @@
 	}
 
 	.hero h1 {
-		font-size: 32px
+		font-size: 32px;
 		margin-bottom: 10px;
 	}
 
@@ -323,7 +305,6 @@
 	}
 
 	.section-skills,
-	.section-blog,
 	.section-form {
 	    padding-bottom: 60px;
 	}
@@ -379,19 +360,9 @@
 		padding: 40px 20px;
 	}
 
-	/* Section: Counters */
-	.section-counters .col-xs-12 + .col-xs-12 {
-		margin-top: 25px;
-	}
-
 	/* Section: Form */
 	.section-form .btn {
 		margin-top: 25px;
-	}
-
-	/* Modal */
-	.modal-header {
-		height: 250px;
 	}
 
 	/* FOOTER
@@ -435,11 +406,17 @@
 
 	.blog-item,
 	.section-blog .col-md-4:nth-last-child(-n+3) .blog-item {
-		margin-bottom: 0px; 
+		display: block;
+		max-height: 100%;
+        object-fit: cover; 
 	}
 
 	.section-blog .btn {
 		margin-top: 25px;
+	}
+
+	.blog-item {
+		height: 100%;
 	}
 
 	/* FOOTER
