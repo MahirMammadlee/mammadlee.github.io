@@ -43,7 +43,7 @@
 </head>
 <body>
 
-    <header id="masthead" class="site-header" data-anchor-target=".hero" data-top="background: rgba(255,255,255,0); padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0);" data-top-bottom="background: rgba(255,255,255,1); padding: 10px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);">
+    <header id="masthead" class="site-header" data-anchor-target=".hero" data-top="background: rgba(255,255,255,0); padding: 15px 0;" data-top-bottom="background: rgba(255,255,255,1); padding: 15px 0;">
         <nav id="primary-navigation" class="site-navigation">
             <div class="container">
                 <div class="navbar-header page-scroll">
@@ -98,17 +98,26 @@
                             <div class="service-item tablink" onclick="openPage('j1', this, 'white')" id="defaultOpen">
                                 <h2>1. Java, JDK və JVM nədir</h2>
                             </div>
-                            <div class="service-item tablink" onclick="openPage('j2', this, 'white')">
+                            <div class="service-item tablink dropdown-btn" onclick="openPage('j2', this, 'white')">
                                 <h2>2. JDK və Netbeans qurulumu</h2>
                             </div>
-                            <div class="service-item tablink" onclick="openPage('j3', this, 'white')">
-                                <h2>3. İlk proqram - "Salam Dünya"</h2>
+                            
+                            <div class="service-item tablink" style="display: none">
+                                <p>2. wqeqerks such as Zend or creating bespoke code, I've written services supporting thousands of users, including REST APIs, e-learning applications and more.
+                                    Utilising php frameworks such as Zend or creating bespoke code, I've written services supporting thousands of users, including REST APIs, e-learning applications and more.
+                                    Utilising php frameworks such as Zend or creating bespoke code, I've written services supporting thousands of users, including REST APIs, e-learning applications and more.
+                                    Utilising php frameworks such as Zend or creating bespoke code, I've written services supporting thousands of users, including REST APIs, e-learning applications and more.
+                                </p>
                             </div>
-                            <div class="service-item tablink" onclick="openPage('j4', this, 'white')">
+                            <div class="service-item tablink dropdown-btn" onclick="openPage('j4', this, 'white')">
                                 <h2>4. Operatorlar</h2>
                             </div>
-                            <div class="service-item tablink" onclick="openPage('j5', this, 'white')">
-                                <h2>5. Data type və casting</h2>
+                            <div class="service-item tablink" style="display: none">
+                                <p>3. wqeqerrrrrrrrrrrrrrrüg ytrbgsssserks such as Zend or creating bespoke code, I've written services supporting thousands of users, including REST APIs, e-learning applications and more.
+                                    Utilising php frameworks such as Zend or creating bespoke code, I've written services supporting thousands of users, including REST APIs, e-learning applications and more.
+                                    Utilising php frameworks such as Zend or creating bespoke code, I've written services supporting thousands of users, including REST APIs, e-learning applications and more.
+                                    Utilising php frameworks such as Zend or creating bespoke code, I've written services supporting thousands of users, including REST APIs, e-learning applications and more.
+                                </p>
                             </div>
                             <div class="service-item tablink" onclick="openPage('j6', this, 'white')">
                                 <h2>6. Dəyişkənlər</h2>
@@ -241,5 +250,25 @@
     <script src="../../assets/js/jquery.countTo.min.js"></script>
     <script src="../../assets/js/script.js"></script>
     <script src="./assets/js/openPageScript.js"></script>
+    
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+          
+        }
+    </script>
 </body>
 </html>

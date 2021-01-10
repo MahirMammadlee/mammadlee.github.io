@@ -298,3 +298,140 @@
       margin-left: 25%;
   }
   
+ 
+	/* CUSTOM RESETS
+	================================================== */
+
+	/* Margin and Paddings Resets */
+	.mt-x-0 {
+	    margin-top: 0;
+	}
+
+	/* HEADER
+	================================================== */
+	.site-logo {
+		padding-left: 15px;
+	}
+
+	.site-logo img {
+		height: 35px;
+	}
+
+	
+	/* HERO
+	================================================== */
+
+
+	.hero h1 {
+		font-size: 32px;
+		margin-bottom: 10px;
+	}
+
+	.job-title {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+
+	/* SITEMAIN
+	================================================== */
+	.site-main {
+		margin-bottom: 140px;
+	}
+
+	/* site-section */
+	.site-section {
+	   padding-top: 10px;
+	}
+
+	.img-lines {
+	    margin: 10px 0 30px;
+	}
+
+	.site-section p {
+	    margin-bottom: 25px;
+	}
+
+	.col-xs-3 {
+		width: 100%;
+	}
+	/* Section: Services */
+	.section-services {
+		margin-top: 0;
+	}
+
+	.service h4 {
+		margin: 10px 0;
+	}
+
+	.section-services .container {
+		width: 90%;
+		padding: 40px 20px;
+	}
+
+	.service-about {
+		display: none;
+	}
+
+	/* FOOTER
+	================================================== */
+	.site-footer .col-xs-12 {
+		text-align: center;
+	}
+
+	.e-mail {
+		display: block;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+
+
+
+/* Extra Small Devices, Phones  
+@media only screen and (max-width : 479px) {
+	.visible-xxs {
+		display: block;
+	}*/
+
+	/* HERO
+	================================================== */
+
+
+	/* SITEMAIN
+	================================================== 
+	.site-main {
+		margin-bottom: 180px;
+	}
+
+	/* Section: blog 
+	.section-blog .col-xs-6 {
+		width: 100%;
+		padding: 0;
+	}*/
+
+	/* FOOTER
+	================================================== 
+	.site-footer .row {
+		display:flex;
+		flex-direction: column-reverse;	
+	}
+
+	.site-footer .text-right{
+		text-align: center;
+	}
+
+	.site-footer .col-xs-6,
+	.site-footer .col-xs-3 {
+		width: 100%;
+	}
+
+	.site-footer .col-xs-offset-3 {
+		margin-left: 0;
+	}
+
+	.text-right {
+		margin-top: 20px;
+	}
+	*/
+	
+
