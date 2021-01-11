@@ -99,13 +99,13 @@ button:focus {
 }
 
 .light {
-    background-color: #fff;
-    color: black;
+    background-color:#e1e1e1;
+    color: #1e1e1e;
 }
 
 .dark {
-    background-color: black;
-    color: white;
+    background-color:#1e1e1e;
+    color: #e1e1e1;
 }
 
 .container {

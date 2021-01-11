@@ -1,5 +1,6 @@
 function openPage(pageName,elmnt,color) {
-    var i, tabcontent, tablinks;
+    if($(window).width() >= 991){
+      var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
@@ -11,6 +12,10 @@ function openPage(pageName,elmnt,color) {
     document.getElementById(pageName).style.display = "block";
     elmnt.style.backgroundColor = color;
   //  elmnt.style.borderRight = 0;
+    }
+    else{
+
+    }
   }
   
   // Get the element with id="defaultOpen" and click on it

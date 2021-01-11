@@ -1,38 +1,49 @@
-function openPage(pageName,elmnt,color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(pageName).style.display = "block";
-    elmnt.style.backgroundColor = color;
-  //  elmnt.style.borderRight = 0;
-  }
-  
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
-
-  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+/*if ($(window).width() < 991) {
+    
   var dropdown = document.getElementsByClassName("dropdown-btn");
   var i;
   
   for (i = 0; i < dropdown.length; i++) {
-    
+  
     dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-    dropdownContent.style.display = "none";
-    } else {
-    dropdownContent.style.display = "block";
-    }
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      document.getElementById(defaultOpen).style.display = "none";
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      }
+      else {
+          
+      }
     });
-    
   }
+}
+else {
+
+}
+
+
+*/
+
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+/*
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+  
+for (i = 0; i < dropdown.length; i++) {
+    
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  }
+  else {
+  dropdownContent.style.display = "block";
+  }
+  });
+    
+} *-/
 
 /***************************** MY CODE ************************************/
 function changeColorByTag(tagName,color){
@@ -71,6 +82,7 @@ function changeColorById(id,color){
 
 
 function dark() {
+  
     document.body.style.background = '#1e1e1e';
     changeColorById("w1","#d0d0d0");
     changeColorById("w2","#d0d0d0");
@@ -82,6 +94,8 @@ function dark() {
     changeBgColorByClass("site-main","#1e1e1e");
     changeBgColorByClass("skrollr","#1e1e1e");
     changeBgColorByClass("site-header","#1e1e1e");
+    changeBgColorByClass("tab-pad","#1e1e1e");
+    changeBgColorById("bg-site","#1e1e1e");
 }
 
 function light() {
@@ -91,9 +105,35 @@ function light() {
     changeColorByTag("h2", "#1e1e1e");
     changeColorByTag("p","#1e1e1e");
     changeColorByClass("lesson-tab","#1e1e1e");
+    changeColorByClass("lesson-tab","#1e1e1e");
     changeBgColorByClass("lesson-name","#d0d0d0");
     changeBgColorByClass("lesson-tab","#e1e1e1");
     changeBgColorByClass("site-main","#e1e1e1");
     changeBgColorByClass("skrollr","#e1e1e1");
     changeBgColorByClass("site-header","#e1e1e1");
+    changeBgColorByClass("tab-pad","#e1e1e1");
+    changeBgColorById("bg-site","#e1e1e1");
+    
 }
+
+function openPage(pageName,elmnt) {
+  if($(window).width() >= 991){
+    var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+//  elmnt.style.borderRight = 0;
+  }
+  else{
+
+  }
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById(defaultOpen).click();

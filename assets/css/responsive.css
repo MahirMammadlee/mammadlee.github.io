@@ -431,6 +431,22 @@
 		height: 100%;
 	}
 
+	.blog-item-i:hover {
+		box-shadow: none;
+	}
+
+	.blog-item h4 {
+		color: #000;
+		text-align: center;
+		margin: 15px 0;
+		font-size: 15px;
+		font-weight: 700;
+	}
+	
+	.blog-item p {
+		display: none;
+	}
+
 	/* FOOTER
 	================================================== */
 	.site-footer .row {
@@ -454,6 +470,8 @@
 	.text-right {
 		margin-top: 20px;
 	}
+
+
 	
 	
 
