@@ -67,6 +67,13 @@ function changeClassByClass(id,class1,class2){
   }
 }
 
+function removeClassById(id1,class1,id2,class2){
+  var element1=document.getElementById(id1);
+  element1.classList.add(class1);
+  var element2=document.getElementById(id2);
+  element2.classList.remove(class2);
+}
+
 function light() {
   document.body.style.background = '#e1e1e1';
   changeColorById("w1","#1e1e1e");
@@ -81,7 +88,8 @@ function light() {
   changeBgColorByClass("site-header","#e1e1e1");
   changeBgColorByClass("tab-pad","#d0d0d0");
   changeBgColorById("bg-site","#e1e1e1");
-  changeClassByClass("lesson-name","light","dark"); 
+  changeClassByClass("lesson-name","light","dark");
+  removeClassById("darkLogo","dis-none","lightLogo","dis-none");
 }
 
 function dark() {
@@ -98,7 +106,8 @@ function dark() {
   changeBgColorByClass("site-header","#1e1e1e");
   changeBgColorByClass("tab-pad","#1e1e1e");
   changeBgColorById("bg-site","#1e1e1e");
-  changeClassByClass("lesson-name","dark","light")
+  changeClassByClass("lesson-name","dark","light");
+  removeClassById("lightLogo","dis-none","darkLogo","dis-none");
 }
 
 function openPage(pageName) {
