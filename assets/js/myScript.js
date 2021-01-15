@@ -1,5 +1,5 @@
 /***************************** MY CODE ************************************/
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+/*Dropdown*/
 if ($(window).width() < 991) {
 
   document.getElementById("defaultOpenDropdown").style.display = "block";
@@ -23,6 +23,7 @@ if ($(window).width() < 991) {
 else {
   document.getElementById("j1").style.display = "block";
 }
+/*Dropdown func closeds*/
 
 function changeColorByTag(tagName,color){
   var x = document.getElementsByTagName(tagName);
@@ -127,7 +128,4 @@ function openPage(pageName) {
   else{
   }
 }
-
-// Get the element with id="defaultOpen" and click on it
-// document.getElementById("defaultOpen").click();
 

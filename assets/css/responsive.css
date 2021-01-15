@@ -10,13 +10,13 @@
 	    margin-left: 30px;
 	}
 
-	/* HERO
+	/* page-title
 	================================================== */
-	.hero {
+	.page-title {
 		min-height: 600px;
 	}
 
-	.hero img {
+	.page-title img {
 		height: 500px;
 	}
 
@@ -51,9 +51,9 @@
 	    margin-left: 20px;
 	}
 
-	/* HERO
+	/* page-title
 	================================================== */
-	.hero h1 {
+	.page-title h1 {
 		font-size: 38px
 	}
 
@@ -61,7 +61,7 @@
 		font-size: 20px;
 	}
 
-	.hero img {
+	.page-title img {
 		height: 420px;
 	}
 
@@ -91,16 +91,16 @@
 		font-size: 22px;
 	}
 
-	/* Section: Services */
-	.section-services{
+	/* Section: interests */
+	.section-interests{
 		padding-top: 200px;
 	}
 
-	.section-services .container {
+	.section-interests .container {
 		padding: 70px 90px;
 	}
 	
-	.service h4 {
+	.interest h4 {
 		font-size: 22px; 
 	}
 
@@ -278,13 +278,13 @@
 		transform: translateX(-30%);
 	}
 
-	/* HERO
+	/* page-title
 	================================================== */
-	.hero .col-md-6:first-child {
+	.page-title .col-md-6:first-child {
 		top: 30%;
 	}
 
-	.hero h1 {
+	.page-title h1 {
 		font-size: 32px;
 		margin-bottom: 10px;
 	}
@@ -294,7 +294,7 @@
 		margin-bottom: 20px;
 	}
 
-	.hero img {
+	.page-title img {
 		height: 360px
 	}
 
@@ -333,12 +333,12 @@
 	    margin-bottom: 10px;
 	}
 
-	/* Section: Services */
-	.section-services {
+	/* Section: interests */
+	.section-interests {
 		padding-top: 180px;
 	}
 
-	.service h4 {
+	.interest h4 {
 		margin: 10px 0;
 	}
 
@@ -360,7 +360,7 @@
 		margin-bottom: 0px;
 	}
 
-	.section-services .container {
+	.section-interests .container {
 		width: 90%;
 		padding: 40px 20px;
 	}
@@ -390,9 +390,9 @@
 		display: block;
 	}
 
-	/* HERO
+	/* page-title
 	================================================== */
-	.hero .visible-xxs + .btn {
+	.page-title .visible-xxs + .btn {
 		margin-top: 10px;
 	}
 
@@ -470,9 +470,5 @@
 	.text-right {
 		margin-top: 20px;
 	}
-
-
-	
-	
 
 }

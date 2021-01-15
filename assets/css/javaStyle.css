@@ -321,6 +321,12 @@ a.icon-up-bg:hover {color: #212121;}
     background-color: black;
 }
 
+.lesson-image {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+}
+
 /* RESPONSIVE
 =========================================================================== */
 
