@@ -1,4 +1,5 @@
 /***************************** MY CODE ************************************/
+
 /*Dropdown*/
 if ($(window).width() < 991) {
 
@@ -128,4 +129,3 @@ function openPage(pageName) {
   else{
   }
 }
-

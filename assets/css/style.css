@@ -428,4 +428,9 @@ a.icon-up-bg:hover {color: #212121;}
     color: #fff;
     margin-left: 25%;
 }
+  
+.show {
+    right: 0;
+}
 
+  

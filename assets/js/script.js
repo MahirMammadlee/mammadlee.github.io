@@ -23,6 +23,7 @@ $(function() {
     $('body').scrollspy({
         target: '.site-header',
         offset: 10
+        
     });
 
 	/* Progress bar */
