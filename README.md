@@ -1,2 +1,2 @@
-# mammadlee.github.io
+# html://mammadlee.ml
 Mammadlee Web Site
