@@ -1,2 +1,2 @@
-# html://mammadlee.ml
+# http://mammadlee.ml
 Mammadlee Web Site
