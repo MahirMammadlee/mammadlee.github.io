@@ -1,11 +1,10 @@
 table, tr, td {
     border-collapse: collapse;
-    border: 3px solid #111522;
+    cursor: pointer;
 }
 
 tr, td {
     border-collapse: collapse;
-    border: 3px solid #111522;
     width: 33%;
 }
 
