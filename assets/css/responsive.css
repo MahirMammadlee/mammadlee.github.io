@@ -1,0 +1,521 @@
+/*==========  Non-Mobile First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+	/* HEADER
+	================================================== */
+	/* Navigation */
+	.navbar-nav > li + li > a {
+	    margin-left: 30px;
+	}
+
+	/* page-title
+	================================================== */
+	.page-title {
+		min-height: 600px;
+	}
+
+	.page-title img {
+		height: 500px;
+	}
+
+	/* SITEMAIN
+	================================================== */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	/* CUSTOM RESETS
+	================================================== */
+	h4 {
+		font-size: 24px;
+	}
+
+	/* Buttons */ 
+	.btn {
+	    min-width: 120px;
+	    line-height: 40px;
+	    padding: 0 25px;
+	    font-size: 14px;
+	} 
+
+	/* HEADER
+	================================================== */
+	/* Navigation */
+	.navbar-nav > li > a {
+		font-size: 14px;
+	}
+
+	.navbar-nav > li + li > a {
+	    margin-left: 20px;
+	}
+
+	/* page-title
+	================================================== */
+
+	.page-title {
+		min-height: 600px;
+	}
+	
+	.page-title h1 {
+		font-size: 38px
+	}
+
+	.job-title {
+		font-size: 20px;
+	}
+
+	.page-title img {
+		height: 420px;
+	}
+
+	/* SITEMAIN
+	================================================== */
+	.site-section {
+		padding-top: 90px;
+	}
+
+	.section-skills,
+	.section-form {
+	    padding-bottom: 90px;
+	}
+
+	.site-section h2,
+	.site-section h3 {
+		font-size: 32px
+	}
+
+	/* Section: Skills */
+	.section-skills .col-md-4 + .col-md-4,
+	.skill + .skill {
+		margin-top: 20px;
+	}
+
+	.skill h4 {
+		font-size: 22px;
+	}
+
+	/* Section: interests */
+	.section-interests{
+		padding-top: 200px;
+	}
+
+	.section-interests .container {
+		padding: 70px 90px;
+	}
+	
+	.interest h4 {
+		font-size: 22px; 
+	}
+
+	/* Section: blog */
+	.section-blog .col-md-4:nth-last-child(-n+3) .blog-item {
+	    margin-bottom: 30px;
+	}
+
+	.section-blog .col-md-4:nth-last-child(-n+2) .blog-item {
+	    margin-bottom: 0;
+	}
+
+	.e-mail {
+		margin-left: 16%;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	/* CUSTOM RESETS
+	================================================== */
+
+	h4 {
+		font-size: 20px;
+	}
+
+	/* Buttons */ 
+	.btn {
+	    min-width: 100px;
+	    line-height: 30px;
+	    padding: 0 20px;
+	} 
+
+	/* Input fields */
+	.form-control {
+	 	margin-top: 25px;
+	}
+
+	/* Margin and Paddings Resets */
+	.mt-x-0 {
+	    margin-top: 0;
+	}
+
+	/* HEADER
+	================================================== */
+	.site-logo {
+		padding-left: 15px;
+	}
+
+	.site-logo img {
+		height: 22px;
+	}
+
+	#overlay {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		/* Overlay positioning */
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		/* Want a left- or right sided navigation instead? Just play around with the width! */
+		height: 100%;
+	}
+	  
+	#overlay div {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		width: 100%;
+		height: 100vh;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	  
+	#overlay ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		color: #fff;
+		text-align: center;
+	}
+	  
+	#overlay ul li {
+		margin:20px auto;
+	}
+
+	#overlay a:link {
+		text-decoration: none;
+		outline: 0;
+		color: #fff;
+	  }
+	  
+	#overlay a:visited {
+		color: #fff;
+	}
+	  
+	#overlay a:hover {
+		color:#fff;
+	}
+	  
+	#overlay a:active {
+		color: #fff;
+	}
+
+	#nav-icon {
+		position: relative;
+		margin: 0 17px;
+		width: 35px;
+		height: 23px;
+		z-index: 10;
+		/* Bring icon ontop of overlay */
+		cursor: pointer;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transition: .5s ease-in-out;
+		transition: .5s ease-in-out;
+	}
+	  
+	#nav-icon span {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 2px;
+		background: #212121;
+		border-radius: 9px;
+		opacity: 1;
+		left: 0;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transition: .25s ease-in-out;
+		transition: .25s ease-in-out;
+	}
+	  
+	#nav-icon span:nth-child(1) {
+		top: 0px;
+	}
+	  
+	#nav-icon span:nth-child(2) {
+		top: 10px;
+	}
+	  
+	#nav-icon span:nth-child(3) {
+		top: 20px;
+	}
+	  
+	#nav-icon.animate-icon span:nth-child(1) {
+		top: 10px;
+		-webkit-transform: rotate(135deg);
+		transform: rotate(135deg);
+		background: #fff;
+	}
+	  
+	#nav-icon.animate-icon span:nth-child(2) {
+		opacity: 0;
+		left: -60px;
+		background: #fff;
+	}
+	  
+	#nav-icon.animate-icon span:nth-child(3) {
+		top: 10px;
+		-webkit-transform: rotate(-135deg);
+		transform: rotate(-135deg);
+		background: #fff;
+	}
+
+	.navbar-nav > li > a,
+	.navbar-nav > li + li > a {
+		display: inline-block;
+		margin: 0;
+		color: #fff;
+	}
+
+	.navbar-nav > li > a:hover,
+	.navbar-nav > li.active > a,
+	.nav > li > a:hover,
+	.nav > li.active > a {
+	    border-bottom: 2px solid #fff;
+	}
+
+	.navbar-toggle.act {
+		z-index: 9999;
+		height: 25px;
+	}
+
+	.main-menu {
+		background-color: rgba(33,33,33,0.9);
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 100;
+		height: 100%;
+		width: 100%;
+		display: table;
+		text-align: center;
+		opacity: 1;
+		-webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+
+	/* page-title
+	================================================== */
+	#page-title {
+		background: url(../img/title-bg-mobile.png) no-repeat center / cover;
+		width: 100%;
+	}
+
+	.page-title .col-md-6:first-child {
+		top: 30%;
+	}
+
+	.page-title h1 {
+		font-size: 32px;
+		margin-bottom: 10px;
+	}
+
+	.job-title {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.page-title img {
+		height: 360px
+	}
+
+	/* SITEMAIN
+	================================================== */
+	.site-main {
+		margin-bottom: 140px;
+	}
+
+	/* site-section */
+	.site-section {
+	   padding-top: 60px;
+	}
+
+	.section-skills,
+	.section-form {
+	    padding-bottom: 60px;
+	}
+
+	.site-section h2,
+	.site-section h3 {
+	    font-size: 28px;
+	}
+
+	.img-lines {
+	    margin: 10px 0 30px;
+	}
+
+	.site-section p {
+	    margin-bottom: 25px;
+	}
+
+	/* Section: Skills */
+	.skill h4 {
+	    text-transform: uppercase;
+	    margin-bottom: 10px;
+	}
+
+	/* Section: interests */
+	.section-interests {
+		padding-top: 180px;
+	}
+
+	.interest h4 {
+		margin: 10px 0;
+	}
+
+	/* Section: blog */
+	.section-blog .col-xs-6:nth-child(odd) {
+		padding-right: 7.5px;
+	}
+
+	.section-blog .col-xs-6:nth-child(even) {
+		padding-left: 7.5px;
+	}
+
+	.blog-item,
+	.section-blog .col-md-4:nth-last-child(-n+3) .blog-item {
+		margin-bottom: 15px; 
+	}
+
+	.section-blog .col-md-4:nth-last-child(-n+2) .blog-item {
+		margin-bottom: 0px;
+	}
+
+	.section-interests .container {
+		width: 90%;
+		padding: 40px 20px;
+	}
+
+	/* Section: Form */
+	.section-form .btn {
+		margin-top: 25px;
+	}
+
+	.blog-site-header {
+		margin-top: 50px;
+	}
+
+	/* FOOTER
+	================================================== */
+	.site-footer .col-xs-12 {
+		text-align: center;
+	}
+
+	.e-mail {
+		display: block;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 479px) {
+	.visible-xxs {
+		display: block;
+	}
+
+	/* page-title
+	================================================== */
+	.page-title .visible-xxs + .btn {
+		margin-top: 10px;
+	}
+
+	/* SITEMAIN
+	================================================== */
+	.site-main {
+		margin-bottom: 180px;
+	}
+
+	/* Section: blog */
+	.section-blog .col-xs-6 {
+		width: 100%;
+		padding: 0;
+	}
+
+	.section-blog .col-xs-6:nth-child(odd) {
+		padding-right: 0px;
+	}
+
+	.section-blog .col-xs-6:nth-child(even) {
+		padding-left: 0px;
+	}
+
+	.blog-item,
+	.section-blog .col-md-4:nth-last-child(-n+3) .blog-item {
+		display: block;
+		max-height: 100%;
+        object-fit: cover; 
+	}
+
+	.section-blog .btn {
+		margin-top: 25px;
+	}
+
+	.blog-item {
+		height: 100%;
+	}
+
+	.blog-item-i:hover {
+		box-shadow: none;
+	}
+
+	.blog-item h4 {
+		color: #000;
+		text-align: center;
+		margin: 15px 0;
+		font-size: 15px;
+		font-weight: 700;
+	}
+	
+	.blog-item p {
+		display: none;
+	}
+
+	/* FOOTER
+	================================================== */
+	.site-footer .row {
+		display:flex;
+		flex-direction: column-reverse;	
+	}
+
+	.site-footer .text-right{
+		text-align: center;
+	}
+
+	.site-footer .col-xs-6,
+	.site-footer .col-xs-3 {
+		width: 100%;
+	}
+
+	.site-footer .col-xs-offset-3 {
+		margin-left: 0;
+	}
+
+	.text-right {
+		margin-top: 20px;
+	}
+
+}
+
