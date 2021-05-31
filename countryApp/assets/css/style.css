@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: monospace;
+  background: rgb(219, 228, 219);
+}
+
+p {
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: teal;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
